@@ -1,13 +1,31 @@
-# Backend API
+# Highsoft Course Portal Backend
 
-This backend provides course data for the frontend.
+This backend is part of the First Year Industry Project for the Highsoft course portal.
 
-## Tech
+It provides course, quiz, and module data for the frontend.
+
+## Tech Stack
+
 - Python
 - Flask
+- JSON
 
-## Setup
+## Project Structure
+
+    app.py
+    requirements.txt
+    README.md
+    .gitignore
+    data/
+      courses.json
+      quiz-cards.json
+      modules.json
+
+## How to Run
+
+1. Open the project in VS Code
+2. Open a terminal in the project folder
+3. Install dependencies:
 
 ```bash
-pip install -r requirements.txt
-python app.py
+python -m pip install -r requirements.txt
