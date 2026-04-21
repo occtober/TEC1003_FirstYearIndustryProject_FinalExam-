@@ -1,23 +1,32 @@
 [
   {
     "id": 1,
-    "title": "Getting starter with Highcharts",
+    "title": "Getting started with Highcharts",
     "skillLevel": "beginner",
     "duration": "15 minutes",
-    "topic": "UX/UI"
+    "topic": "UX/UI",
+    "overview": "Learn the basics of Highcharts and chart design.",
+    "tableOfContents": ["Intro", "Chart basics", "First chart"],
+    "tags": ["beginner", "ux/ui", "charts"]
   },
   {
     "id": 2,
     "title": "Highcharts for Python",
     "skillLevel": "intermediate",
     "duration": "2 days",
-    "topic": "Python"
+    "topic": "Python",
+    "overview": "Use Highcharts with Python-based workflows.",
+    "tableOfContents": ["Setup", "Data binding", "Project example"],
+    "tags": ["intermediate", "python", "data"]
   },
   {
     "id": 3,
     "title": "Highcharts and Accessibility",
     "skillLevel": "advanced",
     "duration": "2 months",
-    "topic": "Accessibility"
+    "topic": "Accessibility",
+    "overview": "Build accessible chart experiences.",
+    "tableOfContents": ["Principles", "Screen readers", "Best practices"],
+    "tags": ["advanced", "accessibility", "ux/ui"]
   }
 ]
