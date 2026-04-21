@@ -1,1 +1,23 @@
-
+[
+  {
+    "id"= 1,
+    "title": "Getting starter with Highcharts",
+    "skillLevel": "beginner",
+    "duration": "15 minutes",
+    "topic": "UX/UI"
+  },
+  {
+    "id"= 2,
+    "title": "Highcharts for Python",
+    "skillLevel": "intermediate",
+    "duration": "2 days",
+    "topic": "Python"
+  },
+  {
+    "id"= 3,
+    "title": "Highcharts and Accessibility",
+    "skillLevel": "advanced",
+    "duration": "2 months",
+    "topic": "Accessibility"
+  }
+]
