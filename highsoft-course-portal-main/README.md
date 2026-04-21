@@ -4,46 +4,51 @@ This project is part of the First Year Industry Project.
 
 The goal is to design and develop a digital course portal for Highsoft.
 
-## Project structure
+## Project Structure
 
 The project is divided into two main parts:
 
 ### Frontend
-Located in `/frontend`  
-Contains HTML, CSS, JavaScript, assets and design system documentation.
+Located in `/frontend`
+
+Contains HTML, CSS, JavaScript, assets, and design system documentation.
 
 ### Backend
-Located in `/backend`  
-Will contain server-side logic, API and data handling.
+Located in `/backend`
 
-## Notes
+Contains the Python Flask API and course data handling.
 
-- The frontend is currently under active development
-- Design is based on Figma and implemented using a component-based CSS structure
-- Backend will be implemented later in the project
+## Backend Features
 
+The backend provides course data for the frontend through API endpoints.
 
-## How to run
+### Endpoints
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Nina-glitch-glitch/highsoft-course-portal.git
-2. Open the project in your preferred code editor
+- `GET /api/courses`  
+  Returns all courses
 
-### Frontend
+- `GET /api/courses/<id>`  
+  Returns a single course by id
 
-The frontend can be opened directly in the browser or served using a local development 
+## Example URLs
 
-server.
+- `http://127.0.0.1:4000/api/courses`
+- `http://127.0.0.1:4000/api/courses/1`
 
-### Backend
+## Backend Structure
 
-The backend is not yet implemented. Instructions will be added when server-side 
+    backend/
+      app.py
+      requirements.txt
+      README.md
+      .gitignore
+      data/
+        courses.json
 
-functionality is introduced.
+## How to Run the Backend
 
+1. Open a terminal in the `backend` folder
+2. Install dependencies:
 
----
-
-
-
+```bash
+python -m pip install -r requirements.txt
