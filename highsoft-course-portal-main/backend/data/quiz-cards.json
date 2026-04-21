@@ -1,1 +1,18 @@
+[
+  {
+    "id": 1,
+    "question": "What is your current skill level?",
+    "options": ["beginner", "intermediate", "advanced"]
+  },
+  {
+    "id": 2,
+    "question": "What topic interests you most?",
+    "options": ["ux/ui", "python", "accessibility"]
+  },
+  {
+    "id": 3,
+    "question": "How much time do you want to spend?",
+    "options": ["15 minutes", "2 days", "2 months"]
+  }
+]
 
