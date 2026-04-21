@@ -1,1 +1,57 @@
+[
+  {
+    "id": 1,
+    "courseId": 1,
+    "title": "Module 1",
+    "content": "Introduction to Highcharts and the dashboard."
+  },
+  {
+    "id": 2,
+    "courseId": 1,
+    "title": "Module 2",
+    "content": "Create your first chart and customize it."
+  },
+  {
+    "id": 3,
+    "courseId": 1,
+    "title": "Module 3",
+    "content": "Wrap up and review key concepts."
+  },
+  {
+    "id": 1,
+    "courseId": 2,
+    "title": "Module 1",
+    "content": "Python setup and Highcharts integration."
+  },
+  {
+    "id": 2,
+    "courseId": 2,
+    "title": "Module 2",
+    "content": "Working with data and chart config."
+  },
+  {
+    "id": 3,
+    "courseId": 2,
+    "title": "Module 3",
+    "content": "Build a small Python chart project."
+  },
+  {
+    "id": 1,
+    "courseId": 3,
+    "title": "Module 1",
+    "content": "Accessibility basics for charts."
+  },
+  {
+    "id": 2,
+    "courseId": 3,
+    "title": "Module 2",
+    "content": "Screen reader support and semantics."
+  },
+  {
+    "id": 3,
+    "courseId": 3,
+    "title": "Module 3",
+    "content": "Testing and improving accessibility."
+  }
+]
 
