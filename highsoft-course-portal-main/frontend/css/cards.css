@@ -1,0 +1,884 @@
+/* ========================================
+   COURSE CARD (course-card/desktop)
+   ======================================== */
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  width: 297px;
+  height: auto;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  background: var(--background-raised);
+  border-radius: 16px;
+}
+
+/* Course card image */
+.course-card__image {
+  width: 265px;
+  height: 125px;
+
+  border-radius: 6px;
+  background-color: var(--color-neutral-100);
+}
+
+/* Course card tags wrapper */
+.course-card__tags {
+  display: flex;
+  gap: 12px; /* ✔️ bekreftet i figma */
+  flex-wrap: wrap;
+}
+
+/* Course card title */
+.course-card__title {
+  margin: 0;
+
+  font-size: var(--font-size-h3-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* Course card description */
+.course-card__description {
+  margin: 0;
+
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* Course card divider */
+.course-card__divider {
+  width: 100%;
+  height: 1px;
+
+  background: var(--background-brand-primary);
+}
+
+/* Course card meta (e.g. number of modules) */
+.course-card__meta {
+  margin: 0;
+
+  font-size: var(--font-size-supporting);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* All course card wrapper*/
+.all-course-card {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* ========================================
+   COURSE CARD (course-card/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .course-card {
+    width: min(296px, calc(100vw - 32px));
+    height: auto;
+  }
+
+  .course-card__image {
+    width: 100%;
+    max-width: 264px;
+    height: auto;
+    aspect-ratio: 264 / 126;
+  }
+
+  .course-card__title {
+    font-size: var(--font-size-h3-mobile);
+  }
+}
+
+
+
+/* ========================================
+   QUIZ INTRO CARD (desktop)
+   ======================================== */
+
+.quiz-intro-card {
+  min-width: 466px;
+  width: fit-content;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  background: var(--background-raised);
+  border-radius: 16px;
+}
+/* Header (icon + title) */
+.quiz-intro-card__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icon inside header */
+.quiz-intro-card__icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Main title inside card */
+.quiz-intro-card__title {
+  margin: 0;
+
+  font-size: var(--font-size-h3-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* Supporting description text */
+.quiz-intro-card__text {
+  margin: 0;
+
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* CTA button wrapper */
+.quiz-intro-card__cta {
+  width: 100%;
+}
+
+/* ========================================
+   QUIZ INTRO CARD (mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .quiz-intro-card {
+    width: min(466px, calc(100vw - 32px));
+    height: auto;
+    gap: 16px;
+  }
+
+  .quiz-intro-card__title {
+    font-size: var(--font-size-h3-mobile);
+  }
+}
+/* ========================================
+   QUIZ QUESTION CARD (desktop)
+   Card used inside quiz modal
+   Reusable states: first / middle / last
+   ======================================== */
+
+.quiz-question-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 460px;
+  min-height: 350px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  background: var(--background-raised);
+  border: 1px solid var(--background-brand-primary);
+  border-radius: 16px;
+}
+
+/* Top row (progress indicator + close button) */
+.quiz-question-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Progress text (shows current step, e.g. 1/3, 2/3, 3/3) */
+.quiz-question-card__progress {
+  margin: 0;
+
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* Close button wrapper (X button in top right corner) */
+.quiz-question-card__close {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main content area (title, question and options) */
+.quiz-question-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+/* Main title (e.g. "Area of Interest") */
+.quiz-question-card__title {
+  margin: 0;
+
+  font-size: var(--font-size-h2-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* Question text (explains what the user should answer) */
+.quiz-question-card__question {
+  margin: 0;
+
+  font-size: var(--font-size-h3-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* Answer options wrapper (buttons like UX/UI, Python, etc.) */
+.quiz-question-card__options {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+/* Navigation row (Back / Next / Complete buttons) */
+.quiz-question-card__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+/* Ghost buttons inside quiz card (Back / Next / Complete) */
+.quiz-question-card .button--ghost {
+  width: 89px;
+}
+/* ========================================
+   QUIZ QUESTION CARD RESULTS (desktop)
+   Card used inside quiz modal to show 
+   results after quiz completion
+   ======================================== */
+/* Variant of quiz question card used to show results after quiz completion. Wider than regular quiz question card to fit recommended courses. */
+.quiz-question-card--results {
+  width: 1000px;
+  max-width: 1000px;
+  min-height: 600px;
+}
+
+/* Results courses wrapper, including all course cards suggested */
+.quiz-results__courses {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Center navigation buttons in results card since there is no "Back" button, only "Retake quiz" */
+.quiz-question-card--results .quiz-question-card__navigation {
+  justify-content: center;
+}
+
+/* Display information for the quiz modal */
+.quiz-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Show the quiz modal when active */
+.quiz-questions {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-questions.active {
+  display: block;
+}
+
+/* ========================================
+   QUIZ QUESTION CARD (quiz-questions/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .quiz-question-card {
+    width: min(434px, calc(100vw - 32px));
+    height: auto;
+    gap: 10px;
+  }
+
+  .quiz-question-card__progress {
+    font-size: var(--font-size-supporting);
+  }
+
+  .quiz-question-card__content {
+    gap: 16px;
+  }
+
+  .quiz-question-card__title {
+    font-size: var(--font-size-h2-mobile);
+  }
+
+  .quiz-question-card__question {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+  }
+
+  .quiz-question-card__options {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .quiz-question-card__navigation {
+    align-items: center;
+  }
+}
+
+
+/* ========================================
+   LEARNING OBJECTIVES CARD (learning-objectives/desktop)
+   ======================================== */
+
+.learning-objectives-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 400px;
+  height: auto;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  background: var(--background-raised);
+  border: 1px solid var(--background-brand-primary);
+  border-radius: 16px;
+}
+
+/* Section title (e.g. "What you will learn") */
+.learning-objectives-card__title {
+  margin: 0;
+
+  font-size: var(--font-size-h2-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* List of learning objectives (bullet point list) */
+.learning-objectives-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Single learning objective item (one bullet point) */
+.learning-objectives-card__item {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* ========================================
+   LEARNING OBJECTIVES CARD (learning-objectives/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .learning-objectives-card {
+    width: min(400px, calc(100vw - 32px));
+    height: auto;
+    gap: 16px;
+  }
+
+  .learning-objectives-card__title {
+    font-size: var(--font-size-h2-mobile);
+  }
+
+  .learning-objectives-card__list {
+    width: 100%;
+    height: auto;
+    gap: 12px;
+  }
+
+  .learning-objectives-card__item {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* ========================================
+   FORMAT LESSONS (format-lessons/desktop)
+   ======================================== */
+
+.format-lessons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: auto;
+  height: auto;
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  background: var(--background-raised);
+  border-radius: 5px;
+}
+
+/* Format item */
+.format-lessons__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Format icon */
+.format-lessons__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Format text */
+.format-lessons__text {
+  margin: 0;
+
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* ========================================
+   FORMAT LESSONS (format-lessons/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .format-lessons {
+    width: 100%;
+    max-width: 142px;
+    height: auto;
+    gap: 12px;
+  }
+}
+
+
+/* ========================================
+   LESSON TITLE (lesson-title/desktop)
+   Variants: first/middle and last
+   ======================================== */
+
+.lesson-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 287px;
+  height: 45px;
+
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+/* Lesson title text */
+.lesson-title__text {
+  margin: 0;
+
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* Lesson format */
+.lesson-format {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Lesson format icon */
+.lesson-format__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Lesson format text */
+.lesson-format__text {
+  margin: 0;
+
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* First + Middle */
+.lesson-title--divider {
+  border-bottom: 2px solid var(--background-brand-primary);
+}
+
+/* Last */
+.lesson-title--last {
+  border-bottom: none;
+}
+
+/* ========================================
+   LESSON TITLE (lesson-title/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .lesson-title {
+    width: 100%;
+    height: auto;
+  }
+
+  .lesson-title__text,
+  .lesson-format__text {
+    font-size: var(--font-size-supporting);
+  }
+}
+
+
+/* ========================================
+   MODULE TITLE (module-title/desktop)
+   Variants: default and finish
+   ======================================== */
+
+.module-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 459px;
+  height: 68px;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  background: var(--module-title-background);
+  border: 1px solid var(--module-title-border);
+  border-radius: 8px;
+}
+
+/* Module title text */
+.module-title__text {
+  margin: 0;
+
+  font-size: var(--font-size-h3-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--module-title-text-icon);
+}
+
+/* Module title icon */
+.module-title__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Default */
+.module-title--default {
+  background: var(--module-title-background);
+}
+
+/* Finish */
+.module-title--finish {
+  background: var(--module-title-background-selected);
+}
+
+/* ========================================
+   MODULE TITLE (module-title/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .module-title {
+    width: 100%;
+    height: auto;
+  }
+
+  .module-title__text {
+    font-size: var(--font-size-h3-mobile);
+  }
+}
+
+
+/* ========================================
+   MODULE WITH LESSONS (module-with-lessons/desktop)
+   Variants: default, hover, expand
+   ======================================== */
+
+.module-with-lessons {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 459px;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  border: 1px solid var(--module-title-border);
+  border-radius: 16px;
+}
+
+/* Default */
+.module-with-lessons--default {
+  height: 68px;
+  background: var(--module-title-background);
+}
+
+/* Hover */
+.module-with-lessons--hover {
+  height: 68px;
+  background: var(--module-title-background-selected);
+}
+
+/* Expand */
+.module-with-lessons--expanded {
+  height: 259px;
+  background: var(--module-title-background-selected);
+}
+
+/* Inner lesson list */
+.module-with-lessons__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ========================================
+   MODULE WITH LESSONS (module-with-lessons/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .module-with-lessons {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .module-with-lessons--default,
+  .module-with-lessons--hover,
+  .module-with-lessons--expanded {
+    height: auto;
+  }
+}
+
+
+/* ========================================
+   TABLE OF CONTENT (table-content/desktop)
+   ======================================== */
+
+.table-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 459px;
+  height: 359px;
+
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Title */
+.table-content__title {
+  margin: 0;
+  padding: 10px;
+
+  font-size: var(--font-size-h2-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* List wrapper */
+.table-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Items inside table content */
+.table-content__item {
+  width: 427px;
+  height: 68px;
+}
+
+/* ========================================
+   TABLE OF CONTENT (table-content/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .table-content {
+    width: 100%;
+    height: auto;
+    gap: 16px;
+  }
+
+  .table-content__title {
+    font-size: var(--font-size-h2-mobile);
+  }
+
+  .table-content__item {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ========================================
+   FIND COURSE SECTION
+   ======================================== */
+
+.find-course {
+  display: flex;
+  align-items: flex-start;
+  gap: 96px;
+
+  width: 100%;
+  min-height: 410px;
+  padding: 16px 32px;
+  box-sizing: border-box;
+}
+
+/* Left column: filter section */
+.find-course__filters {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 642px;
+}
+
+/* Right column: heading + quiz card */
+.find-course__quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  flex: 1;
+  min-width: 466px;
+
+  padding: 0;
+}
+
+/* Section headings */
+.find-course__title {
+  margin: 0;
+
+  font-size: var(--font-size-h2-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* Each filter group */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 642px;
+}
+
+/* Filter group titles */
+.filter-group__title {
+  margin: 0;
+
+  font-size: var(--font-size-h3-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* Wrapper for pill buttons */
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 16px;
+}
+
+/* ========================================
+   FIND COURSE SECTION (tablet/mobile)
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .find-course {
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+  }
+
+  .find-course__filters,
+  .find-course__quiz,
+  .filter-group {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .quiz-intro-card {
+    min-width: 0;
+    width: 100%;
+    max-width: 466px;
+  }
+}
+
+@media (max-width: 768px) {
+  .find-course__title {
+    font-size: var(--font-size-h2-mobile);
+  }
+
+  .filter-group__title {
+    font-size: var(--font-size-h3-mobile);
+  }
+}

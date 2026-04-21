@@ -1,0 +1,72 @@
+/* ========================================
+   PILL FILTER (pill-button/filter-tags/desktop)
+   ======================================== */
+
+/* Default */
+.button--pill-filter {
+  height: 37px;
+  padding: 8px;
+
+  background: var(--button-pill-bg);
+  color: var(--button-pill-text);
+  border: 1px solid var(--button-pill-border);
+
+  border-radius: 999px;
+}
+/* Hover */
+.button--pill-filter:hover {
+  background: var(--button-pill-bg-hover);
+  color: var(--button-pill-text-selected); /* 👈 denne */
+}
+
+/* Selected */
+.button--pill-filter.is-selected {
+  background: var(--button-pill-bg-selected);
+  color: var(--button-pill-text-selected);
+  border-color: var(--button-pill-border-selected);
+}
+
+/* ========================================
+   PILL FILTER (pill-button/filter-tags/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .button--pill-filter {
+    height: 37px;
+    padding: 8px;
+    border-radius: 999px;
+  }
+}
+
+/* ========================================
+   TAG: COURSE (tag-courses/desktop)
+   ======================================== */
+
+.tag-courses {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+  gap: 10px;
+
+  background: var(--tag-course-bg);
+  color: var(--tag-course-text);
+
+  border-radius: 999px;
+
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ========================================
+   TAG: COURSE (tag-courses/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .tag-courses {
+    padding: 6px;
+    font-size: var(--font-size-supporting);
+  }
+}

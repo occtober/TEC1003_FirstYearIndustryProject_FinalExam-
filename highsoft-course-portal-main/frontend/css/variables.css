@@ -1,0 +1,188 @@
+/* ========================================
+   Highsoft Course Portal - Design Tokens
+   Primitive colors
+   ======================================== */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* site*/
+   html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================
+   DESIGN SYSTEM VARIABLES
+
+   Naming convention:
+   --color-*       = primitive colors
+   --background-*  = surfaces / backgrounds
+   --text-*        = text colors
+   --icon-*        = icon colors
+   --button-*      = button styles
+
+   Example:
+   --button-primary-bg = background for primary button
+   ========================================= */
+
+
+:root {
+  /* Neutral */
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-25: #F7F7F8;
+  --color-neutral-50: #F2F1F4;
+  --color-neutral-100: #E3E3E8;
+  --color-neutral-200: #C8C7D1;
+  --color-neutral-300: #ACABBA;
+  --color-neutral-400: #918FA3;
+  --color-neutral-500: #75738C;
+  --color-neutral-600: #5E5C70;
+  --color-neutral-700: #474554;
+  --color-neutral-750: #3B3A46;
+  --color-neutral-800: #2F2E38;
+  --color-neutral-900: #18171C;
+  --color-neutral-1000: #000000;
+
+  /* Brand primary */
+  --color-primary-50: #F6F8FF;
+  --color-primary-100: #F0F1FF;
+  --color-primary-200: #E1E3FF;
+  --color-primary-300: #C3C8FF;
+  --color-primary-400: #A5ACFF;
+  --color-primary-500: #8791FF;
+  --color-primary-600: #626BD0;
+  --color-primary-700: #4A55C9;
+  --color-primary-800: #3F4699;
+  --color-primary-900: #2A2F66;
+  --color-primary-1000: #151733;
+
+  /* Brand secondary */
+  --color-secondary-50: #ECFDF5;
+  --color-secondary-100: #D1FAE5;
+  --color-secondary-200: #A7F3D0;
+  --color-secondary-300: #6EE7B7;
+  --color-secondary-400: #34D399;
+  --color-secondary-500: #10B981;
+  --color-secondary-600: #059669;
+  --color-secondary-700: #047857;
+  --color-secondary-800: #065F46;
+  --color-secondary-900: #064E3B;
+  --color-secondary-1000: #033427;
+
+    /* ========================================
+     Semantic tokens
+     Background, text, icon, buttons
+     ======================================== */
+
+  /* ---------- Background ---------- */
+  --background-default: var(--color-neutral-50);
+  --background-raised: var(--color-neutral-0);
+
+  --background-brand-primary: var(--color-primary-700);
+  --background-brand-primary-subtle: var(--color-primary-200);
+
+  --background-brand-secondary: var(--color-secondary-700);
+  --background-brand-secondary-subtle: var(--color-secondary-100);
+
+  /* ---------- Text ---------- */
+  --text-default: var(--color-neutral-900);
+  --text-inverse: var(--color-neutral-0);
+
+  /* ---------- Icon ---------- */
+  --icon-default: var(--color-neutral-900);
+  --icon-inverse: var(--color-neutral-0);
+
+  /* ========================================
+     Buttons
+     ======================================== */
+
+  /* ---------- Button: Primary ---------- */
+  --button-primary-bg: var(--color-primary-700);
+  --button-primary-bg-hover: var(--color-primary-600);
+  --button-primary-bg-selected: var(--color-primary-800);
+
+  --button-primary-text: var(--color-neutral-0);
+  --button-primary-border: var(--color-primary-700);
+
+  /* ---------- Button: Secondary ---------- */
+--button-secondary-bg: transparent;
+--button-secondary-border: var(--color-primary-700);
+--button-secondary-border-hover: var(--color-primary-600);
+--button-secondary-border-selected: var(--color-primary-800);
+
+--button-secondary-text: var(--color-primary-700);
+--button-secondary-text-hover: var(--color-primary-600);
+--button-secondary-text-selected: var(--color-primary-800);
+
+  /* ---------- Button: Ghost ---------- */
+  --button-ghost-bg: transparent;
+
+  --button-ghost-text: var(--color-primary-700);
+  --button-ghost-text-hover: var(--color-primary-600);
+  --button-ghost-text-selected: var(--color-primary-800);
+  
+ /* ---------- Button: Disabled ---------- */
+--button-disabled-opacity: 0.4;
+  
+/* ---------- Button: Pill ---------- */
+--button-pill-bg: var(--color-neutral-0);
+--button-pill-border: var(--color-primary-700);
+--button-pill-text: var(--color-primary-700);
+
+/* Hover */
+--button-pill-bg-hover: var(--color-primary-600);
+/* Selected */
+--button-pill-bg-selected: var(--color-primary-800);
+--button-pill-border-selected: var(--color-primary-800);
+--button-pill-text-selected: var(--color-neutral-0);
+
+/* ---------- Tags: Course ---------- */
+--tag-course-bg: var(--color-secondary-100);
+--tag-course-text: var(--color-neutral-900);
+  /* ========================================
+     Typography
+     ======================================== */
+
+  --font-family-base: "IBM Plex Sans", Arial, sans-serif;
+
+  --font-size-h1-desktop: 48px;
+  --font-size-h1-mobile: 32px;
+
+  --font-size-h2-desktop: 36px;
+  --font-size-h2-mobile: 28px;
+
+  --font-size-h3-desktop: 28px;
+  --font-size-h3-mobile: 22px;
+
+  --font-size-body: 16px;
+  --font-size-supporting: 14px;
+  --font-size-button: 16px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+/* ---------- Input ---------- */
+--input-bg: var(--background-raised);
+--input-border: var(--background-brand-primary);
+--input-text: var(--text-default);
+--input-placeholder: var(--text-default);
+
+
+
+/* ========================================
+   Module Title
+   ======================================== */
+
+--module-title-background: var(--color-neutral-0);
+--module-title-text-icon: var(--color-neutral-900);
+--module-title-border: var(--color-primary-700);
+--module-title-background-selected: var(--color-primary-200);
+}

@@ -1,0 +1,80 @@
+/* ========================================
+   PROGRESS BAR (progress-bar/desktop)
+   ======================================== */
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 820px;
+}
+
+/* Progress bar title */
+.progress-bar__title {
+  margin: 0;
+
+  font-size: var(--font-size-h3-desktop);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+}
+
+/* Progress bar track */
+.progress-bar__track {
+  position: relative;
+
+  width: 100%;
+  height: 15px;
+
+  border: 1px solid var(--background-brand-primary);
+  border-radius: 16px;
+  background: transparent;
+}
+
+/* Progress bar fill */
+.progress-bar__fill {
+  width: 50%;
+  height: 100%;
+
+  border-radius: 16px;
+  background: var(--background-brand-primary);
+}
+
+/* Progress bar labels */
+.progress-bar__labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Progress bar label */
+.progress-bar__label {
+  margin: 0;
+
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-default);
+}
+
+/* ========================================
+   PROGRESS BAR (progress-bar/mobile)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .progress-bar {
+    width: min(361px, calc(100vw - 32px));
+    gap: 14px;
+  }
+
+  .progress-bar__title {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+  }
+
+  .progress-bar__track {
+    height: 12px;
+  }
+
+  .progress-bar__label {
+    font-size: var(--font-size-supporting);
+  }
+}
