@@ -82,3 +82,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("progress-bar").style.width = `${percentage}%`;
     }
 });
+
