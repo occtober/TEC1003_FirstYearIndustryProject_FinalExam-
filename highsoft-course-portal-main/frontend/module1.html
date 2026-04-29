@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highchart</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/pill-tag.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/progress.css">
+  <link rel="stylesheet" href="css/tableofcontents.css">
+  <script src="https://kit.fontawesome.com/d3431601fa.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Highcharts logo">
+    </div>
+
+    <div class="header__actions">
+      <button class="button button--primary">My Dashboard</button>
+      <button class="button button--secondary">Profile</button>
+    </div>
+  </header>
+
+    <main class="page-content">
+
+    <section>
+      <h1 class="course-title">Getting Started with Highcharts</h1>
+    </section>
+
+    <div class="progress-bar">
+      <p class="progress-bar__title">Your progress</p>
+      <div class="progress-bar__track">
+        <div class="progress-bar__fill" id="progressFill" style="width: 0%"></div>
+      </div>
+      <div class="progress-bar__labels">
+        <span class="progress-bar__label">Start</span>
+        <span class="progress-bar__label">50%</span>
+        <span class="progress-bar__label">End</span>
+      </div>
+    </div>
+
+    <div class="module-section-header">
+      <h2>Module 1: Introduction</h2>
+    </div>
+
+    <div class="overview-grid">
+      <div class="lesson-overview-card">
+        <h2 class="lesson-overview-card__title">Lesson overview</h2>
+        <ul class="lesson-overview-card__list">
+          <li class="lesson-overview-card__item">Lesson 1: Intro to Highcharts</li>
+          <li class="lesson-overview-card__item">Lesson 2: Good to Know Before You Start</li>
+          <li class="lesson-overview-card__item">Lesson 3: Knowledge Check</li>
+        </ul>
+      </div>
+      <div class="learning-objectives-card">
+        <h2 class="learning-objectives-card__title">What you will learn:</h2>
+        <ul class="learning-objectives-card__list">
+          <li class="learning-objectives-card__item">What Highcharts is and why it's easy to integrate into web projects.</li>
+          <li class="learning-objectives-card__item">Key features like responsiveness, interactivity, and customization.</li>
+          <li class="learning-objectives-card__item">How Highcharts provides accessibility features for all users.</li>
+          <li class="learning-objectives-card__item">The different libraries in the Highcharts suite.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- LESSON 1 -->
+    <section class="lesson-section" id="lesson-1">
+      <div class="lesson-section__header">
+        <span class="lesson-section__number">Lesson 1</span>
+        <h2 class="lesson-section__title">Good to Know Before You Start</h2>
+      </div>
+      <div class="lesson-content">
+        <h3>System Requirements</h3>
+        <p>Highcharts is based on native browser technologies. To ensure your setup can run Highcharts smoothly, please make sure your browser is compatible as per the requirements: <a href="https://www.highcharts.com/docs/getting-started/system-requirements" target="_blank" rel="noopener">https://www.highcharts.com/docs/getting-started/system-requirements</a></p>
+
+        <h3>Optional Dependencies</h3>
+        <p>Although Highcharts is self-contained by default, there are some external third-party libraries required to enable certain features. These features are linked to client-side exporting and support for latitude/longitude in Highcharts Maps. For more details, see <a href="https://www.highcharts.com/docs/getting-started/optional-dependencies" target="_blank" rel="noopener">https://www.highcharts.com/docs/getting-started/optional-dependencies</a>.</p>
+
+        <h3>Source Available</h3>
+        <p>Highcharts is source-available software, which means you can view and test the source code (like we are doing in this course), but it is not the same as open source software. The key distinction is that open source software is generally free to use, even for commercial purposes, while source available software like Highcharts comes with specific restrictions, such as requiring a paid license for commercial use. In the case of Highcharts, there are paid commercial licenses, but also free licenses for personal use and educational purposes. Read more at <a href="https://www.highcharts.com/blog/education/" target="_blank" rel="noopener">https://www.highcharts.com/blog/education/</a> and <a href="https://shop.highcharts.com/" target="_blank" rel="noopener">https://shop.highcharts.com/</a>.</p>
+      </div>
+    </section>
+
+    <!-- LESSON 2 -->
+    <section class="lesson-section" id="lesson-2">
+      <div class="lesson-section__header">
+        <span class="lesson-section__number">Lesson 2</span>
+        <h2 class="lesson-section__title">Intro to Highcharts</h2>
+      </div>
+
+      <div class="video-block">
+        <div class="video-inner">
+          <div class="video-eyebrow">Module 1 · Lesson 1</div>
+          <div class="video-title">Intro to Highcharts</div>
+          <button class="video-play-btn" aria-label="Play video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5.14v14l11-7-11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="video-timestamp">0:57</div>
+      </div>
+
+      <div class="lesson-content">
+        <h3>What is Highcharts?</h3>
+        <p>Highcharts is a charting library that makes it easy for developers to create interactive data visualizations in web projects.</p>
+        <ul>
+          <li><strong>Browser-based:</strong> Highcharts is built in JavaScript and works natively in browser environments without extra dependencies.</li>
+          <li><strong>Client-side:</strong> Highcharts runs entirely in the browser, making it portable and easy to integrate into existing projects. This also means Highcharts is backend-agnostic, so it can fetch and visualize data from any server setup or data source.</li>
+          <li><strong>Lightweight and modular:</strong> With a small footprint and minimal dependencies, Highcharts remains efficient. Additionally, its modular design lets you include only what you need.</li>
+          <li><strong>SVG-based graphics:</strong> Highcharts uses SVG (Scalable Vector Graphics). This means chart elements are real DOM nodes that can be styled and animated with CSS or JavaScript, scaled without losing quality, and accessed by other web technologies. Compared to canvas-based rendering, this provides clearer structure, better rendering, and integration with the DOM.</li>
+        </ul>
+
+        <h3>Key Features</h3>
+        <p>Highcharts is flexible as well as easy to use. Beginners can quickly get a chart up and running, while advanced users can dive deeper. Here are some of the key features:</p>
+        <ul>
+          <li><strong>Responsiveness:</strong> Charts automatically adapt to the size of their container, and reflow when the browser window is resized. You can also add your own responsiveness rules to modify chart design and layout across varying screen sizes.</li>
+          <li><strong>Interactivity:</strong> Charts are interactive by default. Hovering over a data point shows its value in a tooltip, and the corresponding series highlights dynamically.</li>
+          <li><strong>Smart defaults:</strong> Highcharts provides sensible defaults for colors, labels, and layout, so even a minimal configuration produces a clean and professional-looking chart.</li>
+          <li><strong>Flexible styling:</strong> Charts can be styled through JavaScript options or via CSS in styled mode.</li>
+          <li><strong>Data handling:</strong> Highcharts supports dynamic and asynchronous updates, making it possible to stream data or refresh charts in real time without reloading the page. It also handles large datasets efficiently with features like boosting.</li>
+          <li><strong>Advanced customization:</strong> Highcharts can be extended and customized far beyond the built-in options, including the ability to add new features, create custom elements, or change how core parts of the library work.</li>
+        </ul>
+
+        <h3>Key Accessibility Features</h3>
+        <p>Highcharts includes extensive accessibility features to make charts accessible to people with disabilities:</p>
+        <ul>
+          <li><strong>Screen reader support:</strong> Chart content is available to screen readers and assistive technologies via SVG and exported ARIA markup.</li>
+          <li><strong>Keyboard navigation:</strong> Charts can be navigated and interacted with using the keyboard.</li>
+          <li><strong>Accessibility-specific chart options:</strong> Developers can configure description text, series labels, or custom keyboard navigation.</li>
+          <li><strong>Low vision features:</strong> Highcharts supports high contrast mode and pattern fills to improve readability for users with low vision or color blindness.</li>
+          <li><strong>Sonification (audible charts):</strong> Charts can be turned into sound using pitch, volume, or timbre to represent data variables.</li>
+        </ul>
+
+        <h3>Additional Advantages</h3>
+        <ul>
+          <li><strong>Broad browser support:</strong> Highcharts is tested across many browsers in their latest version.</li>
+          <li><strong>Mobile friendly:</strong> Charts adapt well to mobile devices with touch support and high-DPI rendering.</li>
+          <li><strong>Export options:</strong> Charts can be exported to PNG, JPEG, PDF, and SVG. Data can also be exported to CSV, XLS, and HTML tables.</li>
+          <li><strong>Official framework integrations:</strong> Highcharts offers official integrations with React, Vue, and Angular.</li>
+          <li><strong>Strong documentation and active community:</strong> Highcharts has an intuitive API, backed by extensive documentation and an active community.</li>
+        </ul>
+
+        <p>Altogether, the Highcharts suite offers developers a professional, flexible, and accessible way to bring data to life on the web.</p>
+
+        <h3>The Highcharts Product Suite</h3>
+        <p>In this course, we will be working with Highcharts Core. But the Highcharts suite consists of several other libraries, each tailored for specific needs:</p>
+        <ul>
+          <li><strong>Highcharts Core:</strong> The core charting library, supporting line, bar, column, pie, and many more chart types.</li>
+          <li><strong>Highcharts Stock:</strong> Extends Highcharts Core with additional features for timeline navigation and finance.</li>
+          <li><strong>Highcharts Maps:</strong> Enables geospatial visualizations, choropleths, and interactive maps.</li>
+          <li><strong>Highcharts Gantt:</strong> For project planning and scheduling with tasks, dependencies, and timelines.</li>
+          <li><strong>Highcharts Dashboards:</strong> Combines charts, KPIs, tables, and other components into unified interactive dashboards.</li>
+          <li><strong>Highcharts Grid:</strong> A spreadsheet-like data table, available as Grid Lite (free) and Grid Pro (advanced features).</li>
+        </ul>
+      </div>
+    </section>
+
+  <!-- LESSON 3 -->
+<section class="lesson-section" id="lesson-3">
+  <div class="lesson-section__header">
+    <span class="lesson-section__number">Lesson 3</span>
+    <h2 class="lesson-section__title">Knowledge Check</h2>
+  </div>
+
+      <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 1: What is Highcharts?</span>
+  <div class="quiz-inline__options">
+    <p>A) A plug-and-play end-user software for creating interactive charts on the web</p>
+    <p>B) A JavaScript charting library that makes it easy for developers to create interactive data visualizations in web projects</p>
+    <p>C) A tool for creating interactive charts in your spreadsheets</p>
+    <p>D) A desktop application for designing charts</p>
+  </div>
+</div>
+
+        <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 2: What image format is Highcharts based on?</span>
+  <div class="quiz-inline__options">
+    <p>A)PNG</p>
+    <p>B) EPS</p>
+    <p>C) PDF</p>
+    <p>D) SVG</p>
+  </div>
+</div>
+
+      <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 3: Which of the following is NOT an accessibility feature in Highcharts?</span>
+  <div class="quiz-inline__options">
+    <p>A) A plug-and-play end-user software for creating interactive charts on the web</p>
+    <p>B) A JavaScript charting library that makes it easy for developers to create interactive data visualizations in web projects</p>
+    <p>C) A tool for creating interactive charts in your spreadsheets</p>
+    <p>D) A desktop application for designing charts</p>
+  </div>
+</div>
+
+    <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 4: Which of the following properties is true for Highcharts?</span>
+  <div class="quiz-inline__options">
+    <p>A) Client-side</p>
+    <p>B) Python-based</p>
+    <p>C) Backend-dependent</p>
+    <p>D) Requires Adobe Flash</p>
+  </div>
+</div>
+
+  </div>
+</section>
+      <nav class="module-nav" aria-label="Module navigation">
+      <a href="#" class="button button--secondary">
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        Back to Course Overview
+      </a>
+      <a href="module2.html" class="button button--primary">
+        Next Module
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+  </main>
+  <script>window.COURSE_PROGRESS = { current: 1, total: 3 };</script>
+  </body>
+  </html>
