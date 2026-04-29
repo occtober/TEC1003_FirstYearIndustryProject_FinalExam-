@@ -1,8 +1,9 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_from_directory
+
 import json
 from pathlib import Path
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="../Frontend", static_url_path="")
 
 BASE_DIR = Path(__file__).parent
 COURSES_FILE = BASE_DIR / "data" / "courses.json"
