@@ -73,3 +73,12 @@ modal.querySelectorAll('.quiz-question-card__navigation button').forEach(functio
     }
   });
 });
+
+// Progress bar logic for course progress
+document.addEventListener("DOMContentLoaded", () => {
+ if (window.COURSE_PROGRESS) {
+    const {current, total} = window.COURSE_PROGRESS;
+    const percentage = Math.round((current / total) * 100);
+    document.getElementById("progress-bar").style.width = `${percentage}%`;
+    }
+});
