@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highchart</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/pill-tag.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/progress.css">
+  <script src="https://kit.fontawesome.com/d3431601fa.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Highcharts logo">
+    </div>
+
+    <div class="header__actions">
+      <button class="button button--primary">Sign Up</button>
+      <button class="button button--secondary">Log In</button>
+    </div>
+  </header>
+
+    <main class="page-content">
+
+    <section>
+      <h1 class="course-title">Getting Started with Highcharts</h1>
+    </section>
+
+    <div class="progress-bar">
+      <p class="progress-bar__title">Your progress</p>
+      <div class="progress-bar__track">
+        <div class="progress-bar__fill" id="progressFill" style="width: 0%"></div>
+      </div>
+      <div class="progress-bar__labels">
+        <span class="progress-bar__label">Start</span>
+        <span class="progress-bar__label">50%</span>
+        <span class="progress-bar__label">End</span>
+      </div>
+    </div>
+
+    <div class="module-section-header">
+      <h2>Module 2: Your First Chart</h2>
+    </div>
+
+    <div class="overview-grid">
+      <div class="lesson-overview-card">
+        <h2 class="lesson-overview-card__title">Lesson overview</h2>
+        <ul class="lesson-overview-card__list">
+          <li class="lesson-overview-card__item">Lesson 1: Creating a Simple Chart</li>
+          <li class="lesson-overview-card__item">Lesson 2: Setting Options</li>
+          <li class="lesson-overview-card__item">Lesson 3: Knowledge Check</li>
+        </ul>
+      </div>
+      <div class="learning-objectives-card">
+        <h2 class="learning-objectives-card__title">What you will learn:</h2>
+        <ul class="learning-objectives-card__list">
+          <li class="learning-objectives-card__item">How to use an online code editor to quickly prototype and test with Highcharts.</li>
+          <li class="learning-objectives-card__item">How to create a simple chart from scratch using Highcharts, starting with an empty chart configuration.</li>
+          <li class="learning-objectives-card__item">How to work with multiple series and set various chart options.</li>
+          <li class="learning-objectives-card__item">How to use modules to extend Highcharts' functionality.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- LESSON 1 -->
+    <section class="lesson-section" id="lesson-1">
+      <div class="lesson-section__header">
+        <span class="lesson-section__number">Lesson 1</span>
+        <h2 class="lesson-section__title">Lesson 1: Creating a Simple Chart</h2>
+      </div>
+     <div class="video-block">
+        <div class="video-inner">
+          <button class="video-play-btn" aria-label="Play video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5.14v14l11-7-11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="video-timestamp">0:57</div>
+      </div>
+    </section>
+
+    <!-- LESSON 2 -->
+    <section class="lesson-section" id="lesson-2">
+      <div class="lesson-section__header">
+        <span class="lesson-section__number">Lesson 2</span>
+        <h2 class="lesson-section__title">Lesson 2: Setting Options</h2>
+         <h4 class="lesson-section__title">Part 1: Adding more Series</h4>
+        <p>In this video, we continue with the chart from the previous lesson, and build on our imaginary scenario to add more series and set additional options.</p>
+      </div>
+
+      <div class="video-block">
+        <div class="video-inner">
+          <button class="video-play-btn" aria-label="Play video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5.14v14l11-7-11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="video-timestamp">0:57</div>
+      </div>
+         
+      <h4 class="lesson-section__title">Part 2: Data Labels and Tooltip</h4>
+        <p>In this video, we add data labels and a change the format of our tooltip.</p>
+      </div>
+
+      <div class="video-block">
+        <div class="video-inner">
+          <button class="video-play-btn" aria-label="Play video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5.14v14l11-7-11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="video-timestamp">0:57</div>
+      </div>
+      
+      <h4 class="lesson-section__title">Part 3: Annotation</h4>
+        <p>In this video, we use the annotations module to add a unique label to the highest column of the chart.</p>
+      </div>
+
+      <div class="video-block">
+        <div class="video-inner">
+          <button class="video-play-btn" aria-label="Play video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5.14v14l11-7-11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="video-timestamp">0:57</div>
+      </div>
+  
+   <h4 class="lesson-section__title">Part 4: Click Event Handler</h4>
+        <p>In this video, we add a callback function to handle click events on the chart columns.</p>
+      </div>
+
+      <div class="video-block">
+        <div class="video-inner">
+          <button class="video-play-btn" aria-label="Play video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5.14v14l11-7-11-7z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="video-timestamp">0:57</div>
+      </div>
+    </section>
+
+  <!-- LESSON 3 -->
+<section class="lesson-section" id="lesson-3">
+  <div class="lesson-section__header">
+    <span class="lesson-section__number">Lesson 3</span>
+    <h2 class="lesson-section__title">Knowledge Check</h2>
+  </div>
+
+      <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 1: When should we use the plotOptions option?</span>
+  <div class="quiz-inline__options">
+    <p>A) When we need to set options that apply to a single point</p>
+    <p>B) When we need to change the chart type</p>
+    <p>C) When we want to set options that apply to multiple series</p>
+    <p>D) When we want to set options that apply to a single series</p>
+  </div>
+</div>
+
+        <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 2: What is required to add annotations to Highcharts?</span>
+  <div class="quiz-inline__options">
+    <p>A)Nothing, it's built into core Highcharts</p>
+    <p>B) Loading the annotations module and configuring the annotations option</p>
+    <p>C) Writing custom JavaScript code</p>
+    <p>D) Using a special chart type</p>
+  </div>
+</div>
+
+      <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 3: How can you make chart points interactive with click events?</span>
+  <div class="quiz-inline__options">
+    <p>A) Using CSS only</p>
+    <p>B) It's not possible to add click events</p>
+    <p>C) Using the events option</p>
+    <p>D) Only through external JavaScript</p>
+  </div>
+</div>
+
+    <div class="quiz-inline__question">
+  <span class="quiz-inline__label">Question 4: What does the stacking option do in column charts?</span>
+  <div class="quiz-inline__options">
+    <p>A) Makes columns thinner</p>
+    <p>B) Places columns side by side</p>
+    <p>C) Removes columns completely</p>
+    <p>D) Places columns on top of each other</p>
+  </div>
+</div>
+
+  </div>
+</section>
+      <nav class="module-nav" aria-label="Module navigation">
+      <a href="#" class="button button--secondary">
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        Back to Course Overview
+      </a>
+         <a href="#" class="button button--primary">
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+             Back
+      </a>
+      <a href="module3.html" class="button button--primary">
+        Next Module
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+  </main>
+  <script>window.COURSE_PROGRESS = { current: 2, total: 3 };</script>
+  </body>
+  </html>
