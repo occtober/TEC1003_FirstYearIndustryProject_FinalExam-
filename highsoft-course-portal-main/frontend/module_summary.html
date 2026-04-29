@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highchart</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/pill-tag.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/progress.css">
+  <script src="https://kit.fontawesome.com/d3431601fa.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Highcharts logo">
+    </div>
+
+    <div class="header__actions">
+      <button class="button button--primary">Sign Up</button>
+      <button class="button button--secondary">Log In</button>
+    </div>
+  </header>
+
+    <main class="page-content">
+
+    <section>
+      <h1 class="course-title">Getting Started with Highcharts</h1>
+    </section>
+
+    <div class="progress-bar">
+      <p class="progress-bar__title">Your progress</p>
+      <div class="progress-bar__track">
+        <div class="progress-bar__fill" id="progressFill" style="width: 0%"></div>
+      </div>
+      <div class="progress-bar__labels">
+        <span class="progress-bar__label">Start</span>
+        <span class="progress-bar__label">50%</span>
+        <span class="progress-bar__label">End</span>
+      </div>
+    </div>
+
+    <div class="module-section-header">
+      <h2>Course Wrap Up</h2>
+      <p>We have covered some key aspects about what Highcharts is, learned how to get a chart up and running, and how to customize it to suit a simple use case.</p>
+    </div>
+ <div class="lesson-content">
+        <h4>During this course you learned how to:</h4>
+        <ul>
+          <li>Create a basic chart using Highcharts</li>
+          <li>Add multiple series and categories to represent your data.</li>
+          <li>Use chart options such as plotOptions, stacking, colors, and dataLabels to change presentation and behavior.</li>
+          <li>Include and use the annotations module to add labels to specific points.</li>
+           <li>Customize how the tooltip is formatted and use event handlers to create additional interactivity.</li>  
+          </ul>
+<p>These fundamentals give you a good starting point for building interactive, production-ready charts. From here you can explore more topics like responsive rules, accessibility options, and integrations with frameworks (React/Vue/Angular).</p>
+   
+   <p><strong>Note about the accessibility module:</strong> In this course, we did not use the accessibility module when creating our chart, as this was outside the scope of the tutorial videos. However, in a production setup, it is highly recommended to include and enable this module to ensure your charts are accessible to all users. To do this, simply add the accessibility module script tag to your HTML, after the Highcharts JS files. Unless you have a specific reason not to, make sure to include it in your project.</p>
+
+<div class="module-section-header">
+      <p>Course Wrap Up</p>   
+<ul>
+  <li><a href="https://www.highcharts.com/docs/getting-started/your-first-chart">Highcharts: Your First Chart</a></li>
+  <li><a href="https://api.highcharts.com/highcharts/">Highcharts API Reference</a></li>
+  <li><a href="https://www.highcharts.com/docs/chart-concepts/series">Series Documentation</a></li>
+  <li><a href="https://www.highcharts.com/docs/advanced-chart-features/annotations-module">Annotations Module Documentation</a></li>
+   <li><a href="https://www.highcharts.com/docs/accessibility/accessibility-module">Accessibility Module Documentation</a></li>
+</ul>
+   </div>
+
+      <nav class="module-nav" aria-label="Module navigation">
+      <a href="#" class="button button--secondary">
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        Back to Course Overview
+      </a>
+         <a href="#" class="button button--primary">
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+             Back
+      </a>
+      <a href="#" class="button button--primary">
+        Complete Course
+        <span class="button__icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+  </main>
+  </body>
+  <script>window.COURSE_PROGRESS = { current: 3, total: 3 };</script>
+  </html>
